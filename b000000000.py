@@ -3,9 +3,29 @@
 
 @author: lagokamdem
 """
+eleves = {}
+eleves["Boris"]=["Amir","Franck","Nathalie","Bertrand"]
+eleves["Amir"]=[]
+eleves["Franck"]=[]
+eleves["Nathalie"]=[]
+eleves["Bertrand"]=["Erna","Hassana","Abdelkrim"]
+eleves["Erna"]=[]
+eleves["Hassana"]=[]
+eleves["Zoureni"]=["Sekou","Auriane","Corlings"]
+eleves["Sekou"]=[]
+eleves["Auriane"]=[]
+eleves["Corlings"]=[]
+eleves["Abdelkrim"]=["Souleyman","Zack","Zoureni"]
+eleves["Souleyman"]=[]
+eleves["Zack"]=[]
 
-def main():
+def search(name):
   print('Informatique: le rêve')
 
-if __name__== "__main__":
-  main()
+  if __name__== "__main__":
+     search("Boris")
+
+def search(name):
+  print(len(eleves.values()))
+  return False
+
