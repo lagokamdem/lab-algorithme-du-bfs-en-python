@@ -33,7 +33,7 @@ def search(name):
          print(personne + " a le fameux Mac")
          return True
       search_queue += eleves[personne]
-      
+   return False
 
 if __name__== "__main__":
    search("Boris")
