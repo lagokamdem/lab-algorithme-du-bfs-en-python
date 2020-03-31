@@ -27,8 +27,13 @@ from collections import deque
 def search(name):
    search_queue = deque()
    search_queue += eleves[name]
-   print( len(search_queue) )
-   return False
+   while search_queue:
+      personne = search_queue.popleft()
+      if personne_elue(personne):
+         print(personne + " a le fameux Mac")
+         return True
+      search_queue += eleves[personne]
+      
 
 if __name__== "__main__":
    search("Boris")
